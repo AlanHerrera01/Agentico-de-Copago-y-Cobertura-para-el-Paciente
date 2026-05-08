@@ -1,0 +1,57 @@
+# PROMPTS DE PRUEBA PARA VALIDAR CAMBIO DE ESPECIALIDADES
+
+## 1. SÍNTOMAS NEUROLÓGICOS (debe dar Neurología)
+"Los síntomas empezaron hace unas 6 horas y han ido empeorando rápido. El dolor está en un 9/10 y no mejora con descanso ni con paracetamol. Me duele sobre todo detrás de los ojos y en la sien derecha, es un dolor muy fuerte y pulsátil. También tengo náuseas, vomité una vez y la luz me molesta mucho. Siento el cuello rígido y hace un rato tuve dificultad para hablar claramente por unos minutos. Además siento debilidad en el brazo izquierdo y un poco de mareo."
+
+## 2. SÍNTOMAS CARDÍACOS (debe dar Cardiología)
+"Tengo dolor en el pecho que se siente como una opresión fuerte, como si me estuvieran apretando el corazón. El dolor se irradia hacia el brazo izquierdo y la mandíbula. También siento palpitaciones muy rápidas, sudoración fría y dificultad para respirar. Empezó hace unos 30 minutos mientras estaba subiendo escaleras. Tengo antecedentes de presión alta."
+
+## 3. SÍNTOMAS RESPIRATORIOS (debe dar Medicina General)
+"Tengo fiebre de 38.5°C, tos con flema verde, dolor de garganta al tragar y congestión nasal. Los síntomas empezaron hace 3 días con un resfriado leve pero han ido empeorando. Me siento cansado y con malestar general. No tengo dificultad para respirar pero sí un poco de silbido en el pecho."
+
+## 4. SÍNTOMAS DIGESTIVOS (debe dar Medicina General)
+"Desde ayer tengo dolor abdominal agudo en la parte inferior derecha, empieza alrededor del ombligo y se mueve hacia abajo. El dolor es constante e intensifica cuando camino o toso. Tengo náuseas, pérdida de apetito y fiebre de 37.8°C. No he vomitado pero sí tengo estreñimiento."
+
+## 5. SÍNTOMAS TRAUMATOLÓGICOS (debe dar Traumatología)
+"Jugando fútbol ayer caí sobre el tobillo derecho y se torció completamente. Ahora está muy hinchado, morado y no puedo apoyar el peso. El dolor es intenso, especialmente al intentar mover el pie. Pongo hielo pero la hinchazón no baja. Siento un chasquido cuando intento caminar."
+
+## 6. SÍNTOMAS DERMATOLÓGICOS (debe dar Dermatología)
+"Tengo una erupción roja con picazón intensa en los brazos y el pecho que apareció hace 2 días. Son como pequeñas ampollas que arden al tocarlas. No tengo fiebre pero sí sensación de ardor. Empezó después de comer mariscos, cosa que nunca me había pasado."
+
+## 7. SÍNTOMAS OFTALMOLÓGICOS (debe dar Oftalmología)
+"Desde esta mañana tengo el ojo izquierdo muy rojo, con secreción amarillenta y pegajosa. Siento como si tuviera arena en el ojo, mucha sensibilidad a la luz y lagrimeo constante. Al despertar tenía los párpados pegados. No tengo dolor fuerte pero sí molestia constante."
+
+## 8. SÍNTOMAS GINECOLÓGICOS (debe dar Ginecología)
+"Tengo dolor pélvico intenso durante la menstruación, con sangrado muy abundante y coágulos. También tengo dolor de cabeza, náuseas y sensibilidad en los senos. Los síntomas empeoran cada mes y me impiden hacer mis actividades normales. El dolor es como calambres muy fuertes."
+
+## 9. SÍNTOMAS PSIQUIÁTRICOS (debe dar Medicina General/Psiquiatría)
+"Hace un mes que no puedo dormir bien, me despierto a las 3am y no puedo volver a dormirme. Durante el día me siento ansioso, con el corazón acelerado y pensamientos negativos constantes. He perdido el apetito y el interés en las cosas que antes me gustaban. Me siento triste sin motivo aparente."
+
+## 10. SÍNTOMAS PEDIÁTRICOS (debe dar Pediatría)
+"Mi hijo de 3 años tiene fiebre de 39°C, tos seca y irritabilidad. No quiere comer ni beber, está muy cansado y llora mucho. Tiene la nariz congestionada y le duele el oído derecho. Ayer estaba bien pero hoy despertó así de repente."
+
+## 11. SECCIÓN GASTROENTEROLOGÍA - NIVELES DE GRAVEDAD
+
+### NIVEL BAJO (debe dar Medicina General - Prioridad Baja)
+"Desde hace 2 días siento un poco de malestar estomacal después de comer. Tengo gases y una ligera acidez que mejora con antiácidos. Mi apetito es normal y no tengo fiebre ni vómitos. Las heces son normales. El malestar es leve, como 2/10."
+
+### NIVEL MEDIO-BAJO (debe dar Medicina General - Prioridad Media)
+"Hace 3 días empecé con náuseas ocasionales y dolor abdominal sordo en la parte superior del estómago. Tengo acidez frecuente que no mejora con antiácidos comunes. He perdido un poco el apetito pero no he vomitado. Las heces son un poco más oscuras de lo normal. El dolor es 5/10."
+
+### NIVEL MEDIO (debe dar Medicina General - Prioridad Media)
+"Desde ayer tengo dolor abdominal moderado 6/10 en la zona del epigastrio, náuseas constantes y he vomitado 2 veces en las últimas 6 horas. Tengo fiebre de 37.5°C y sensación de llenura precoz. No he podido comer nada sólido. El dolor empeora después de las comidas."
+
+### NIVEL MEDIO-ALTO (debe dar Medicina General - Prioridad Alta)
+"Hace 24 horas tengo dolor abdominal intenso 8/10 que se irradia hacia la espalda, náuseas incontrolables con 5 episodios de vómito bilioso, fiebre de 38.2°C y taquicardia. No tolero nada por vía oral, ni líquidos. Las heces son claras y pastosas. Me siento muy débil y mareado."
+
+### NIVEL ALTO (debe dar Medicina General - Prioridad Alta/Crítica)
+"Llevo 12 horas con dolor abdominal severo 10/10 en fosa iliaca derecha, fiebre de 39°C, vómitos persistentes, abdomen rígido al tacto, signos de peritonismo. No he podido defecar en 2 días. Tengo deshidratación evidente con mucosas secas y taquicardia. El dolor es insoportable y no mejora con nada."
+
+### NIVEL CRÍTICO (debe dar Medicina General - Prioridad Crítica/Emergencia)
+"Hace 6 horas empecé con dolor abdominal súbito y exquisito 10/10, seguido de vómito con sangre fresca y heces negras alquitranadas. Tengo hipotensión, piel fría y sudorosa, taquicardia 120, abdomen en tabla. Signos claros de shock hipovolémico. Pierdo el conocimiento periódicamente."
+
+## EXPECTED RESULTS:
+- Cada prompt debe generar una especialidad diferente
+- enfermedadDetectada debe ser una enfermedad específica (NO la especialidad)
+- enfermedadesProbables debe ser una lista de 3 enfermedades reales
+- especialidad debe corresponder a las enfermedades detectadas

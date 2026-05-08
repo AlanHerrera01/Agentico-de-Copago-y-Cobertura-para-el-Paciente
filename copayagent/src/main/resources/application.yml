@@ -1,0 +1,21 @@
+openai:
+  api-key: "sk-..."
+
+notion:
+  token: "secret_..."
+  database:
+    policies: "your-policies-database-id"
+    hospitals: "your-hospitals-database-id"
+
+spring:
+  main:
+    banner-mode: "off"
+  application:
+    name: copayagent
+  web:
+    locale: es
+
+logging:
+  level:
+    root: INFO
+    org.springframework.web: INFO
