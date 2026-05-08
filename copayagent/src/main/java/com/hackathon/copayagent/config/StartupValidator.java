@@ -71,7 +71,7 @@ public class StartupValidator {
                 log.warn("⚠️ GitHub Models API Key no configurada - usando fallback");
             } else {
                 log.info("✅ GitHub Models API Key configurada correctamente");
-                // Validar conexión real con una petición de prueba
+                // Validar conexión real con una petición de prueba con timeout más largo
                 try {
                     gitHubModelsClient.getSpecialtyAndPriority(
                         com.hackathon.copayagent.dto.OpenAiRequest.builder()
@@ -83,16 +83,20 @@ public class StartupValidator {
                             .temperature(0.1)
                             .build()
                     )
-                    .timeout(java.time.Duration.ofSeconds(5))
+                    .timeout(java.time.Duration.ofSeconds(15))
                     .doOnSuccess(response -> {
                         log.info("✅ Conexión con GitHub Models validada exitosamente");
                     })
                     .doOnError(error -> {
-                        log.error("❌ Error validando conexión con GitHub Models: {}", error.getMessage());
+                        log.warn("⚠️ Error validando conexión con GitHub Models: {} - La aplicación continuará funcionando con fallbacks", error.getMessage());
+                    })
+                    .onErrorResume(error -> {
+                        log.warn("⚠️ GitHub Models no disponible durante startup, se usará fallback durante runtime");
+                        return Mono.empty();
                     })
                     .subscribe();
                 } catch (Exception e) {
-                    log.error("❌ Error al validar GitHub Models: {}", e.getMessage());
+                    log.warn("⚠️ Error al validar GitHub Models: {} - La aplicación continuará funcionando", e.getMessage());
                 }
             }
         } else {

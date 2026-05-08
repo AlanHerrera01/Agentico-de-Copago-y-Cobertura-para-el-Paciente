@@ -65,12 +65,16 @@ public class WebClientConfig {
                     .build();
             
             HttpClient httpClient = HttpClient.create()
-                    .secure(ssl -> ssl.sslContext(sslContext));
+                    .secure(ssl -> ssl.sslContext(sslContext))
+                    .responseTimeout(java.time.Duration.ofSeconds(30))
+                    .connectTimeoutMillis(10000)
+                    .option(io.netty.channel.ChannelOption.CONNECT_TIMEOUT_MILLIS, 10000);
             
             return WebClient.builder()
                     .baseUrl("https://models.inference.ai.azure.com")
                     .defaultHeader(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON_VALUE)
                     .clientConnector(new org.springframework.http.client.reactive.ReactorClientHttpConnector(httpClient))
+                    .codecs(configurer -> configurer.defaultCodecs().maxInMemorySize(10 * 1024 * 1024)) // 10MB
                     .build();
         } catch (Exception e) {
             // Fallback sin SSL personalizado si hay error

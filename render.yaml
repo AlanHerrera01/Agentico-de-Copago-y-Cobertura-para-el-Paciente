@@ -1,0 +1,45 @@
+services:
+  # Backend Spring Boot API
+  - type: web
+    name: copayagent-api
+    env: java
+    plan: free
+    buildCommand: ./mvnw clean package -DskipTests
+    startCommand: java -jar -Dserver.port=$PORT target/copayagent-0.0.1-SNAPSHOT.jar
+    healthCheckPath: /actuator/health
+    envVars:
+      - key: PORT
+        value: 8081
+      - key: JAVA_VERSION
+        value: 17
+      - key: NOTION_TOKEN
+        sync: false
+      - key: NOTION_DB_PACIENTES
+        sync: false
+      - key: NOTION_DB_PLANES
+        sync: false
+      - key: NOTION_DB_HOSPITALES
+        sync: false
+      - key: NOTION_DB_ESPECIALIDADES
+        sync: false
+      - key: GITHUB_MODELS_API_KEY
+        sync: false
+      - key: AI_PROVIDER
+        value: github-models
+      - key: OPENAI_MODEL
+        value: gpt-4o-mini
+
+  # Frontend React App
+  - type: web
+    name: copayagent-frontend
+    env: static
+    plan: free
+    buildCommand: cd Frontend && npm run build
+    publishPath: Frontend/dist
+    headers:
+      - path: /*
+        name: X-Frame-Options
+        value: DENY
+      - path: /*
+        name: X-Content-Type-Options
+        value: nosniff
