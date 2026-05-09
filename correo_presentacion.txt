@@ -1,0 +1,50 @@
+Asunto: Conoce nuestro proyecto de asistencia médica con IA
+
+Hola,
+
+Queremos presentarte "Agente de Copago y Cobertura para el Paciente", un sistema que creamos para ayudar a las personas a navegar mejor por el sistema de salud.
+
+## ¿Qué hace?
+
+**Dr. PanIA** es nuestro asistente médico que:
+- Te hace preguntas sobre tus síntomas
+- Te dice qué especialidad necesitas
+- Calcula cuánto te costará la consulta
+- Te recomienda hospitales según tu seguro
+
+## ¿Cómo funciona?
+
+1. Le cuentas tus síntomas a Dr. PanIA
+2. Él te hace preguntas para entender mejor
+3. Te dice qué médico deberías ver
+4. Te muestra cuánto cubre tu seguro
+5. Te recomienda dónde ir
+
+## Características principales
+
+- **Asistente disponible 24/7** para orientación médica
+- **Triage inteligente** que prioriza urgencias
+- **Cálculo transparente** de costos y cobertura
+- **Recomendaciones** de hospitales cercanos
+- **Interfaz sencilla** y fácil de usar
+
+## Enlaces
+
+🔗 **Repositorio**: https://github.com/AlanHerrera01/Agentico-de-Copago-y-Cobertura-para-el-Paciente
+
+🌐 **Aplicación**: [Enlace cuando esté desplegada]
+
+## ¿Para quién es?
+
+- Personas que no saben a qué médico ir
+- Quienes quieren entender su seguro médico
+- Familias que necesitan orientación médica rápida
+- Cualquiera que quiera ahorrar tiempo y dinero en salud
+
+Es un proyecto sencillo pero útil que busca hacer la atención médica más accesible para todos.
+
+Si tienes preguntas o quieres ver cómo funciona, no dudes en escribirnos.
+
+Saludos,
+
+[Tu Nombre]
