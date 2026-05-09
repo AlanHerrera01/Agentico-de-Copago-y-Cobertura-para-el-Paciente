@@ -67,7 +67,6 @@ public class WebClientConfig {
             HttpClient httpClient = HttpClient.create()
                     .secure(ssl -> ssl.sslContext(sslContext))
                     .responseTimeout(java.time.Duration.ofSeconds(30))
-                    .connectTimeoutMillis(10000)
                     .option(io.netty.channel.ChannelOption.CONNECT_TIMEOUT_MILLIS, 10000);
             
             return WebClient.builder()
